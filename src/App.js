@@ -3,7 +3,6 @@ import { NavLink, Route, Routes } from 'react-router-dom';
 import Calculator from './components/Caclulator';
 import Home from './components/Home/Home';
 import Quotes from './components/Quotes/Quotes';
-import './components/QuotesDisplay.css';
 
 function App() {
   return (
