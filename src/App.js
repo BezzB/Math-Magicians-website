@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Calculator from './components/Caclulator';
+import QuoteDisplay from './components/Quotes';
+import './components/QuotesDisplay.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="homecontainer">
+      <h1>Calculator</h1>
+      <Calculator />
+      <QuoteDisplay />
     </div>
   );
 }
