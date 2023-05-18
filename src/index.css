@@ -46,6 +46,8 @@ body {
 
 .links-container {
   float: right;
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-link {
@@ -71,7 +73,6 @@ body {
 .nav-link a:hover {
   color: black;
 }
-
 
 .App {
   display: flex;
@@ -125,11 +126,6 @@ body {
   grid-column: span 2; /* Makes the zero button span two columns */
 }
 
-.links-container{
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-link ul li{
+.nav-link ul li {
   list-style: none;
 }

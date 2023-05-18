@@ -8,24 +8,32 @@ import './components/QuotesDisplay.css';
 function App() {
   return (
     <>
-    <div class="navbar">
-    <div className="logo-container">
-        <h1 className="logo">Math Magicians</h1>
-      </div>
-    <ul className="links-container">
-        <li><NavLink className="nav-link" to='/'>Home</NavLink> </li>
-        <li><NavLink className="nav-link" to='/quotes'>Quotes</NavLink> </li>
-        <li><NavLink className="nav-link" to='/calculator'>Calculator</NavLink> </li> 
-    </ul>
-   
+      <div className="navbar">
+        <div className="logo-container">
+          <h1 className="logo">Math Magicians</h1>
+        </div>
+        <ul className="links-container">
+          <li>
+            <NavLink className="nav-link" to="/">Home</NavLink>
+            {' '}
+          </li>
+          <li>
+            <NavLink className="nav-link" to="/quotes">Quotes</NavLink>
+            {' '}
+          </li>
+          <li>
+            <NavLink className="nav-link" to="/calculator">Calculator</NavLink>
+            {' '}
+          </li>
+        </ul>
 
-    </div>
-    
-      <Routes> 
-      <Route path='/' element= {<Home/>}/>
-      <Route path='/calculator' element={<Calculator/>}/>
-      <Route path='/quotes' element={<Quotes/>}/>
-    </Routes>
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/quotes" element={<Quotes />} />
+      </Routes>
     </>
   );
 }
