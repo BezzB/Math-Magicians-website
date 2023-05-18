@@ -22,6 +22,57 @@ body {
   background-color: var(--light);
 }
 
+.navbar {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.logo-container {
+  float: left;
+  margin-left: 10px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.links-container {
+  float: right;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background-color: lightgray;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-link a:hover {
+  color: black;
+}
+
+
 .App {
   display: flex;
   min-height: 100vh;
@@ -72,4 +123,13 @@ body {
 #zero.btn {
   width: 200px;
   grid-column: span 2; /* Makes the zero button span two columns */
+}
+
+.links-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link ul li{
+  list-style: none;
 }
