@@ -1,4 +1,3 @@
-
 import calculate from '../logic/calculate';
 
 describe('test calculation', () => {
