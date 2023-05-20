@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { NavLink, Route, Routes } from 'react-router-dom';
+import Calculator from './components/Caclulator';
+import Home from './components/Home/Home';
+import Quotes from './components/Quotes/Quotes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="navbar">
+        <div className="logo-container">
+          <h1 className="logo">Math Magicians</h1>
+        </div>
+        <ul className="links-container">
+          <li>
+            <NavLink className="nav-link" to="/">Home</NavLink>
+            {' '}
+          </li>
+          <li>
+            <NavLink className="nav-link" to="/quotes">Quotes</NavLink>
+            {' '}
+          </li>
+          <li>
+            <NavLink className="nav-link" to="/calculator">Calculator</NavLink>
+            {' '}
+          </li>
+        </ul>
+
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/quotes" element={<Quotes />} />
+      </Routes>
+    </>
   );
 }
 
