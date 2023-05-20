@@ -83,6 +83,9 @@
 
 To get a local copy up and running, follow these steps.
 
+- npm start
+- npm test
+
 
 ### Prerequisites
 
@@ -105,9 +108,12 @@ In order to run this project you need:
 👤 **Barnet**
 
 - GitHub: [@bezzB]
-- 
- 
 
+
+👤 **Berhanu**
+ 
+- GitHub: [@BranBayou]
+- 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
