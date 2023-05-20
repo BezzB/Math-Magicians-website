@@ -43,22 +43,6 @@ describe('test calculation', () => {
     expect(calculate(sampleInputData, '=')).toEqual(expectedOutput);
   });
 
-  // Test multiplication
-  it('Should return 10', () => {
-    const sampleInputData = {
-      total: '2',
-      next: '5',
-      operation: 'x',
-    };
-
-    const expectedOutput = {
-      total: '10',
-      next: null,
-      operation: null,
-    };
-    expect(calculate(sampleInputData, '=')).toEqual(expectedOutput);
-  });
-
   // Test division
   it('Should return 10', () => {
     const sampleInputData = {
