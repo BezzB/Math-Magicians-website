@@ -44,7 +44,6 @@ describe('test operate', () => {
     expect(actualOutput).toEqual(expectedOutput);
   });
 
-  // Test multiplication
   it('Should return 25', () => {
     const expectedOutput = '25';
     const actualOutput = operate(5, 5, 'x');
