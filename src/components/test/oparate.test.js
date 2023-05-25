@@ -58,7 +58,7 @@ describe('test operate', () => {
     expect(actualOutput).toEqual(expectedOutput);
   });
 
-  // Test modulo
+ 
   it('Should return 0', () => {
     const expectedOutput = '0';
     const actualOutput = operate(5, 5, '%');
