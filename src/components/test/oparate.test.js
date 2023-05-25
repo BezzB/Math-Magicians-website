@@ -51,14 +51,12 @@ describe('test operate', () => {
     expect(actualOutput).toEqual(expectedOutput);
   });
 
-  // Test division
   it('Should return 1', () => {
     const expectedOutput = '1';
     const actualOutput = operate(5, 5, '÷');
     expect(actualOutput).toEqual(expectedOutput);
   });
 
- 
   it('Should return 0', () => {
     const expectedOutput = '0';
     const actualOutput = operate(5, 5, '%');
